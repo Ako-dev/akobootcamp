@@ -1,9 +1,19 @@
 // close modal on esc key
 $(document).ready(() => {
-  $("#submitFormBtn").on("click", (e) => {
+  $('#submitFormBtn').on('click', (e) => {
     e.preventDefault()
 
-    console.log($("form"))
+    let form = $('form').serializeArray()
+
+    let data2 = form.reduce((acc, cv) => {
+      return {
+        ...acc,
+        [cv.name]: cv.value,
+      }
+    }, {})
+
+    console.log(data2)
+
     let data = {
       firstName: 'william',
       lastName: 'vasquex',
