@@ -2,10 +2,93 @@
   filter: brightness(50%);
 }
 
+.textareaform {
+  border: 0;
+  border-bottom: dotted 1px #464646;
+}
+
+.subscribeFormLabels {
+  color: #4255A4;
+}
+
+ul.list {
+  width: 100% !important;
+  max-height: 30vh !important;
+  overflow: auto !important;
+}
+
+button.close {
+  font-size:25px;
+}
+
+.modal-title {
+  font-size:20px;
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  padding:0px 30px 20px 30px;
+
+}
+.input-fields {
+  border: 0;
+  border-bottom: dotted 1px #464646;
+}
 .topSubjectNames {
   /* color: #ffffff; */
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 0px;
   text-transform: uppercase;
+}
+
+
+/* below is for new form. */
+
+textarea {
+	resize: none;
+}
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
 }
