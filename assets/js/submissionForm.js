@@ -14,20 +14,16 @@ $(document).ready(() => {
 
     console.log(data2)
 
-    let data = {
-      firstName: 'william',
-      lastName: 'vasquex',
-      email: 'will@william.com  ',
-    }
 
-    // $.ajax({
-    //   type: 'POST',
-    //   crossDomain: true,
-    //   data: data,
-    //   url: 'https://tranquil-mesa-15283.herokuapp.com/api/createuser',
-    //   success: function (jsondata) {
-    //     console.log(jsondata)
-    //   }
-    // })
+
+    $.ajax({
+      type: 'POST',
+      crossDomain: true,
+      data: data,
+      url: 'https://tranquil-mesa-15283.herokuapp.com/api/createuser',
+      success: function (jsondata) {
+        console.log(jsondata)
+      }
+    })
   })
 })
