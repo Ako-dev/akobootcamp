@@ -5,14 +5,14 @@ $(document).ready(() => {
 
     let form = $('form').serializeArray()
 
-    let data2 = form.reduce((acc, cv) => {
+    let data = form.reduce((acc, cv) => {
       return {
         ...acc,
         [cv.name]: cv.value,
       }
     }, {})
 
-    console.log(data2)
+    console.log(data)
 
 
 
