@@ -7,13 +7,13 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-86407503-7"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments)
+        dataLayer.push(arguments);
       }
-      gtag('js', new Date())
+      gtag("js", new Date());
 
-      gtag('config', 'UA-86407503-7')
+      gtag("config", "UA-86407503-7");
     </script>
 
     <meta charset="utf-8" />
@@ -1162,8 +1162,23 @@
             </button>
           </div>
           <div class="modal-body">
-            <form class="mui-form">
-              <!-- <legend>Pre register for Ako Bootcamp</legend> -->
+            <!-- <form>
+              <div class="form-row">
+                <label for="validationDefault01">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault01"
+                  placeholder="First name"
+                  value="Mark"
+                  required
+                />
+              </div>
+              <button type="submit" id="submitFormBtn" class="btn btn-primary">
+                Submit
+              </button>
+            </form> -->
+            <!-- <form>
               <div class="text-field">
                 <label class="subscribeFormLabels" for="firstName"
                   >Nombre</label
@@ -1173,6 +1188,7 @@
                   type="text"
                   name="firstName"
                   placeholder="nombre"
+                  required
                 />
               </div>
 
@@ -1283,22 +1299,144 @@
                   name="qanda"
                 ></textarea>
               </div>
+              <button type="submit" id="submitFormBtn" class="btn btn-primary">
+                Submit
+              </button>
+            </form> -->
+
+            <form id='myForm'>
+              <div class="text-field">
+                <label
+                  class="subscribeFormLabels"
+                  id="firstNameLabel"
+                  for="firstName"
+                  >Nombre *</label
+                >
+                <input
+                  class="input-fields"
+                  type="text"
+                  name="firstName"
+                  placeholder="nombre"
+                  required
+                />
+              </div>
+
+              <div class="text-field">
+                <label class="subscribeFormLabels" for="lastName"
+                  >Apellido</label
+                >
+                <input
+                  class="input-fields"
+                  type="text"
+                  name="lastName"
+                  placeholder="apellido"
+                />
+              </div>
+
+              <div class="text-field">
+                <label class="subscribeFormLabels" id="emailLabel" for="email"
+                  >Correo Electronico *</label
+                >
+                <input
+                  class="input-fields"
+                  type="email"
+                  name="email"
+                  placeholder="bootcamp@ako.com"
+                  required
+                />
+              </div>
+
+              <div class="text-field">
+                <label class="subscribeFormLabels" for="country"
+                  >Country:
+                  <span
+                    style="color: red !important; display: inline; float: none"
+                    >*</span
+                  ></label
+                >
+                <select
+                  class="input-fields"
+                  id="country"
+                  name="country"
+                  class="form-control"
+                >
+                  <option value="Argentina">Argentina</option>
+                  <option value="Aruba">Aruba</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Cote D'ivoire">Cote D'ivoire</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Trinidad and Tobago">
+                    Trinidad and Tobago
+                  </option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Venezuela">Venezuela</option>
+                </select>
+              </div>
+
+              <div class="text-field">
+                <label class="subscribeFormLabels" for="phone">Telefono:</label>
+                <input
+                  class="input-fields"
+                  type="tel"
+                  name="phone"
+                  placeholder="Numero de Telefono"
+                />
+              </div>
+
+              <div class="text-field" style="display: flex">
+                <label class="subscribeFormLabels" for="englishLevel"
+                  >Cual es tu nivel de Ingles?</label
+                >
+                <select
+                  class="input-fields"
+                  name="englishLevel"
+                  id="englishLevel"
+                >
+                  <option value="Basico">Basico</option>
+                  <option value="Intermedio">Intermedio</option>
+                  <option value="Avanzado">Avanzado</option>
+                </select>
+              </div>
+
+              <div class="text-field">
+                <label class="subscribeFormLabels" for="qanda"
+                  >Alguna duda o pregunta?</label
+                >
+                <textarea
+                  class="textareaform"
+                  placeholder="Escriba sus commentarios y preguntas aqui"
+                  name="qanda"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" id="submitFormBtn" type="submit">Submit form</button>
             </form>
           </div>
-          <div class="modal-footer">
-            <button
-              type="submit"
-              id="submitFormBtn"
-              class="btn btn-default"
-              data-dismiss="modal"
-            >
-              Submit
-            </button>
-          </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
-
+    <!-- data-dismiss="modal" -->
     <!-- Scroll Up -->
     <div id="back-top">
       <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
