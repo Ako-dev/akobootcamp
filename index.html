@@ -1304,13 +1304,16 @@
               </button>
             </form> -->
 
-            <form id='myForm'>
+            <form id="myForm">
               <div class="text-field">
                 <label
                   class="subscribeFormLabels"
                   id="firstNameLabel"
                   for="firstName"
-                  >Nombre *</label
+                  >Nombre <span
+                  style="color: red !important; display: inline; float: none"
+                  >*</span
+                ></label
                 >
                 <input
                   class="input-fields"
@@ -1335,7 +1338,10 @@
 
               <div class="text-field">
                 <label class="subscribeFormLabels" id="emailLabel" for="email"
-                  >Correo Electronico *</label
+                  >Correo Electronico <span
+                  style="color: red !important; display: inline; float: none"
+                  >*</span
+                ></label
                 >
                 <input
                   class="input-fields"
@@ -1429,7 +1435,9 @@
                   name="qanda"
                 ></textarea>
               </div>
-              <button class="btn btn-primary" id="submitFormBtn" type="submit">Submit form</button>
+              <button class="btn btn-default" id="submitFormBtn" type="submit">
+                Submit form
+              </button>
             </form>
           </div>
           <div class="modal-footer"></div>
