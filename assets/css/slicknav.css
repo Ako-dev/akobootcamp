@@ -14,6 +14,48 @@
   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
     margin-top: 0.188em; }
 
+/* Custom */
+.slicknav_menu{
+  display: none;
+}
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+ }
+ 
+ body::-webkit-scrollbar {
+  display: none !important;
+ }
+ /* Hide scrollbar for IE, Edge and Firefox */
+ body {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+ }
+
+ .header-area.header-transparent{
+    box-shadow: none !important;
+ }
+
+ .header-bottom.header-sticky{
+    /* display: none; */
+ }
+ .header-bottom.header-sticky.sticky-bar{
+    /* height: 10vh; */
+    display: none;
+
+ }
+ .footer-padding{
+   padding: 0 !important;
+ }
+
+
+
+
+
+
+
+
+ 
 .slicknav_menu {
   *zoom: 1; }
   .slicknav_menu .slicknav_menutxt {

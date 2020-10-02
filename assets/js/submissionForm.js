@@ -5,29 +5,25 @@ $(document).ready(() => {
 
     let form = $('form').serializeArray()
 
-    let data2 = form.reduce((acc, cv) => {
+    let data = form.reduce((acc, cv) => {
       return {
         ...acc,
         [cv.name]: cv.value,
       }
     }, {})
 
-    console.log(data2)
+    console.log(data)
 
-    let data = {
-      firstName: 'william',
-      lastName: 'vasquex',
-      email: 'will@william.com  ',
-    }
 
-    // $.ajax({
-    //   type: 'POST',
-    //   crossDomain: true,
-    //   data: data,
-    //   url: 'https://tranquil-mesa-15283.herokuapp.com/api/createuser',
-    //   success: function (jsondata) {
-    //     console.log(jsondata)
-    //   }
-    // })
+
+    $.ajax({
+      type: 'POST',
+      crossDomain: true,
+      data: data,
+      url: 'https://tranquil-mesa-15283.herokuapp.com/api/createuser',
+      success: function (jsondata) {
+        console.log(jsondata)
+      }
+    })
   })
 })
